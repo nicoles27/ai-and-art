@@ -1,1 +1,1 @@
-# ai-and-art
+# in-the-public
