@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Use Consent Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><strong>IN THE PUBLIC</strong></h1>
+    <p>An Interactive Visual Story On Privacy</p><br>
+    <p><strong>NICOLE STOTT</strong><br><br>UAL - Creative Computing Institute</p><br>
+    
+    <h3>DATA USE CONSENT FORM</h3>
+    <p>Permission to Track Emotions and Use Data for Research</p><br>
+    
+    <h4>Purpose of the Study:</h4>
+    <p>This study aims to track emotions using video recordings. The video footage will not be stored. Instead, the extracted emotional data will be used to generate graphs for my university project.</p><br>
+    
+    <h4>What Participation Involves:</h4>
+    <ul>
+        <li>Your facial expressions will be recorded for emotion analysis.</li>
+        <li>No identifiable video footage will be stored or shared.</li>
+        <li>Only anonymised emotion data will be used for academic purposes.</li>
+    </ul><br>
+    
+    <h4>Your Rights:</h4>
+    <ul>
+        <li>Participation is voluntary, and you may withdraw at any time before data analysis.</li>
+        <li>Your personal identity will remain confidential.</li>
+    </ul><br>
+    
+    <form id="consent-form">
+        <label for="name">Name of participant:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="contact">Contact information:</label>
+        <input type="email" id="contact" name="email" required><br><br>
+    
+        <label>Signature of Participant:</label>
+        <canvas id="signature-pad"></canvas>
+        <input type="hidden" name="signature" id="signature-data">
+        <button type="button" id="clear-signature">Clear Signature</button>
+        <br><br>
+    
+        <label for="date">Date signed:</label>
+        <input type="date" id="date" name="date" required><br><br>
+    
+        <button type="submit">Submit</button>
+    </form>    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
